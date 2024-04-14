@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <div class="loader"></div>
+      <img src="./images/logo.svg" id="load-logo" />
+    </div>
+    <header>
+      <figure>
+          <img src="./images/logo.svg" alt="logo" id="lg" />
+      </figure>
+      <button class="m opn-m"></button>
+      <nav>
+          <ul id="menu-opt">
+              <li id="features">
+                  Features<button class="arr-btn">
+                      <img src="./images/icon-arrow-down.svg" alt="arrow" class="f-arr" />
+                  </button>
+                  <ul class="f-drpdn">
+                      <li>
+                          <figure><img src="./images/icon-todo.svg" /></figure>
+                          <figcaption>Todo List</figcaption>
+                      </li>
+                      <li>
+                          <figure><img src="./images/icon-calendar.svg" /></figure>
+                          <figcaption>Calender</figcaption>
+                      </li>
+                      <li>
+                          <figure><img src="./images/icon-reminders.svg" /></figure>
+                          <figcaption>Reminders</figcaption>
+                      </li>
+                      <li>
+                          <figure><img src="./images/icon-planning.svg" /></figure>
+                          <figcaption>Planning</figcaption>
+                      </li>
+                  </ul>
+              </li>
+              <li id="company">
+                  Company<button class="arr-btn">
+                      <img src="./images/icon-arrow-down.svg" alt="arrow" class="c-arr" />
+                  </button>
+                  <ul class="c-drpdn">
+                      <li><a href="#">History</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Blog</a></li>
+                  </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+          </ul>
+          <ul id="user-actions">
+              <li><button class="login">Login</button></li>
+              <li><button class="reg">Register</button></li>
+          </ul>
+      </nav>
+  </header>
+  
+  <section>
+    <main>
+      <h1>Make remote work</h1>
+      <p>
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button>Learn more</button>
+      <div id="clnt">
+        <img src="./images/client-databiz.svg" alt="client-databiz" />
+        <img src="./images/client-audiophile.svg" alt="client-audiophile" class="cli-aud-img" />
+        <img src="./images/client-meet.svg" alt="client-meet" />
+        <img src="./images/client-maker.svg" alt="client-maker" class="cli-aud-img" />
+      </div>
+    </main>
+    <figure id="hr">
+      <img src="./images/image-hero-desktop.png" alt="image-hero-desktop" class="hr-dsk" />
+      <img src="./images/image-hero-mobile.png" alt="image-hero-mobile" class="hr-mob" />
+    </figure>
+  </section>
+  <script src="script.js"></script>
+  </body>
+</html>
+  
