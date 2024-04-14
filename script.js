@@ -1,24 +1,26 @@
-let feature = document.querySelector("#features");
-let company = document.querySelector("#company");
-let featureDropdown = document.querySelector(".f-drpdn");
-let companyDropdown = document.querySelector(".c-drpdn");
-let featureArrows = document.querySelector(".f-arr");
-let companyArrows = document.querySelector(".c-arr");
-let menu = document.querySelector(".m");
+let feature = document.querySelector("#main-features");
+let company = document.querySelector("#main-company");
+let feature_dropdown = document.querySelector(".main-feature-dropdown");
+let company_dropdown = document.querySelector(".main-company-dropdown");
+let feature_arrows = document.querySelector(".feature-arrow");
+let company_arrows = document.querySelector(".main-company-arrow");
+let menu = document.querySelector(".main-menu");
 let nav = document.querySelector("nav");
-let bgBlack = document.querySelector("body");
+let bg_black = document.querySelector("body");
 
-let pageLoader = document.getElementById("loader-wrapper");
+
+let page_loader = document.getElementById("loader-wrapper");
 window.addEventListener("load", (event) => {
-  pageLoader.style.display = "none";
+  page_loader.style.display = "none";
 });
 
+
 feature.addEventListener("click", () => {
-  toggleDropdown(featureDropdown, featureArrows);
+  toggleDropdown(feature_dropdown, feature_arrows);
 });
 
 company.addEventListener("click", () => {
-  toggleDropdown(companyDropdown, companyArrows);
+  toggleDropdown(company_dropdown, company_arrows);
 });
 
 function toggleDropdown(dropdown, arrows) {
@@ -31,9 +33,10 @@ function toggleDropdown(dropdown, arrows) {
   }
 }
 
+
 menu.addEventListener("click", () => {
-  menu.classList.toggle("opn-m");
-  menu.classList.toggle("cls-m");
-  bgBlack.classList.toggle("bdy");
-  nav.classList.toggle("shw");
+  menu.classList.toggle("open_menu");
+  menu.classList.toggle("close_menu");
+  bg_black.classList.toggle("body");
+  nav.classList.toggle("show");
 });
